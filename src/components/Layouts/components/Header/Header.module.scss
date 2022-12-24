@@ -14,6 +14,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 var(--default-layout-horizontal-spacer);
 
         .logo {
             position: relative;
@@ -95,14 +96,33 @@
                 }
             }
         }
-        .action {
-            color: red;
-        }
     }
+}
+
+// Actions
+.action {
+    display: flex;
+    align-items: center;
+}
+.action-btn {
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 5px 8px;
+    color: #161823;
+    cursor: pointer;
 }
 .more-btn {
     background-color: transparent;
     font-size: 2rem;
     padding: 4px 8px;
     margin-left: 28px;
+    cursor: pointer;
+}
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-left: 22px;
 }
