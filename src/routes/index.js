@@ -1,11 +1,12 @@
-import { HeaderOnly } from '~/components/Layouts/index.js';
-import routesConfig from '~/config/routes.js';
+import { HeaderOnly } from '~/Layouts/index.js';
+import config from '~/configs/';
 import Following from '~/pages/Following';
 import HomePage from '~/pages/Home';
 import ProfilePage from '~/pages/Profile/index.js';
 import SearchPage from '~/pages/Search/index.js';
 import Upload from '~/pages/Upload/index.js';
 
+const routesConfig = config.routes;
 // Public routes
 const publicRoutes = [
     { path: routesConfig.root, component: HomePage },

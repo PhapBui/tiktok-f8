@@ -24,7 +24,7 @@ import Image from '~/components/Image/index.js';
 import Menu from '~/components/Popper/Menu/index.js';
 import Search from '../Search/index.js';
 import { Link } from 'react-router-dom';
-import routesConfig from '~/config/routes.js';
+import routesConfig from '~/configs/routes.js';
 
 const cx = classNames.bind(styles);
 

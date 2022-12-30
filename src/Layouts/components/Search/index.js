@@ -11,7 +11,7 @@ import AccountItem from '~/components/AccountItem/index.js';
 import { SearchIcon } from '~/components/Icons/index.js';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import useDebounce from '~/hooks/useDebounce.js';
-import { search } from '~/api/searchServices.js';
+import { search } from '~/services/searchService.js';
 
 const cx = classNames.bind(styles);
 
