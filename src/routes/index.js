@@ -1,4 +1,5 @@
 import { HeaderOnly } from '~/components/Layouts/index.js';
+import routesConfig from '~/config/routes.js';
 import Following from '~/pages/Following';
 import HomePage from '~/pages/Home';
 import ProfilePage from '~/pages/Profile/index.js';
@@ -7,11 +8,11 @@ import Upload from '~/pages/Upload/index.js';
 
 // Public routes
 const publicRoutes = [
-    { path: '/', component: HomePage },
-    { path: '/follow', component: Following },
-    { path: '/profile', component: ProfilePage },
-    { path: '/search', component: SearchPage },
-    { path: '/upload', component: Upload, layout: HeaderOnly },
+    { path: routesConfig.root, component: HomePage },
+    { path: routesConfig.follow, component: Following },
+    { path: routesConfig.profile, component: ProfilePage },
+    { path: routesConfig.search, component: SearchPage },
+    { path: routesConfig.upload, component: Upload, layout: HeaderOnly },
 ];
 
 //Private route

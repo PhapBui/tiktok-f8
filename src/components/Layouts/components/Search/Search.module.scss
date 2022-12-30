@@ -1,0 +1,87 @@
+.search-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(22, 24, 35, 0.5);
+    padding: 5px 12px;
+}
+.search-result,
+.search {
+    width: 361px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: var(--search-height);
+    padding-left: 16px;
+    background-color: rgba(22, 24, 35, 0.05);
+    border-radius: var(--search-border-radius);
+
+    border: 1px solid transparent;
+    &::after {
+        content: '';
+        position: absolute;
+        top: calc((var(--search-height) - (var(--search-height) - 18px)) / 2);
+        right: var(--search-button-width);
+        width: 1px;
+        height: calc(var(--search-height) - 18px);
+
+        background-color: rgba(22, 24, 35, 0.15);
+    }
+    &:focus-within {
+        border-color: rgba(22, 24, 35, 0.3);
+    }
+    input {
+        flex: 1;
+        height: 100%;
+        color: var(--black);
+        font-size: 1.6rem;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        caret-color: var(--primary);
+        &:not(:placeholder-shown) ~ .search-btn {
+            color: rgba(22, 24, 35, 0.7);
+        }
+    }
+
+    .clear,
+    .loading {
+        position: absolute;
+        font-size: 1.6rem;
+        right: calc(var(--search-button-width) + 10px);
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .loading {
+        color: #333;
+        animation: spinner 1s linear infinite;
+    }
+    @keyframes spinner {
+        from {
+            transform: translateY(-50%) rotate(0);
+        }
+        to {
+            transform: translateY(-50%) rotate(360deg);
+        }
+    }
+
+    .search-btn {
+        width: var(--search-button-width);
+        height: 100%;
+        border-top-right-radius: var(--search-border-radius);
+        border-bottom-right-radius: var(--search-border-radius);
+        font-size: 2rem;
+        transition: all linear 0.3s;
+        color: rgba(22, 24, 35, 0.34);
+        &:hover {
+            background-color: rgba(22, 24, 35, 0.03);
+            cursor: pointer;
+        }
+        &:active {
+            background-color: rgba(22, 24, 35, 0.08);
+        }
+    }
+}
