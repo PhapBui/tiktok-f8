@@ -18,11 +18,11 @@ import 'tippy.js/dist/tippy.css'; // optional
 import images from '~/assets/images/index.js';
 import styles from './Header.module.scss';
 
-import Button from '~/components/Button/index.js';
-import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons/index.js';
-import Image from '~/components/Image/index.js';
-import Menu from '~/components/Popper/Menu/index.js';
-import Search from '../Search/index.js';
+import Button from '~/components/Button/Button.js';
+import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons/Icons.js';
+import Image from '~/components/Image/Image.js';
+import Menu from '~/components/Popper/Menu/Menu.js';
+import Search from '../Search/Search.js';
 import { Link } from 'react-router-dom';
 import routesConfig from '~/configs/routes.js';
 
@@ -134,7 +134,7 @@ function Header() {
                     <Menu items={currentUser ? USER_MENU : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
                             <Image
-                                src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/fcbe6edbe4f59d7ca1dd0346fceb2b0f~c5_100x100.jpeg?x-expires=1671937200&x-signature=e6%2FddTgcHtu%2BrAuHWR6yjGs7zws%3D"
+                                src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTDPbU5LOCdpme0h33xebF1aoHoTyQOw_DZbBZsK_FeWk66IEoEHa61kK0N6ulQJDko"
                                 className={cx('user-avatar')}
                                 alt="Nguyen Van A"
                             />

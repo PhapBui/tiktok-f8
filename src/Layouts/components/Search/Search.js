@@ -7,8 +7,8 @@ import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
 
 import { useEffect, useRef, useState } from 'react';
-import AccountItem from '~/components/AccountItem/index.js';
-import { SearchIcon } from '~/components/Icons/index.js';
+import AccountItem from '~/components/AccountItem/AccountItem.js';
+import { SearchIcon } from '~/components/Icons/Icons.js';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import useDebounce from '~/hooks/useDebounce.js';
 import { search } from '~/services/searchService.js';

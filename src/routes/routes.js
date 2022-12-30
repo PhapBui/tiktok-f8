@@ -1,10 +1,10 @@
 import { HeaderOnly } from '~/layouts/index.js';
-import config from '~/configs/';
-import Following from '~/pages/Following';
-import HomePage from '~/pages/Home';
-import ProfilePage from '~/pages/Profile/index.js';
-import SearchPage from '~/pages/Search/index.js';
-import Upload from '~/pages/Upload/index.js';
+import config from '~/configs/configs';
+import Following from '~/pages/Following/Following';
+import HomePage from '~/pages/Home/Home';
+import ProfilePage from '~/pages/Profile/Profile.js';
+import SearchPage from '~/pages/Search/Search.js';
+import Upload from '~/pages/Upload/Upload.js';
 
 const routesConfig = config.routes;
 // Public routes
