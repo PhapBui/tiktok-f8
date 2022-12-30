@@ -1,4 +1,4 @@
-import { HeaderOnly } from '~/Layouts/index.js';
+import { HeaderOnly } from '~/layouts/index.js';
 import config from '~/configs/';
 import Following from '~/pages/Following';
 import HomePage from '~/pages/Home';

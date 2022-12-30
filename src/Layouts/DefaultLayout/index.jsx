@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind.js';
 import Header from '../components/Header/index.js';
 import SideBar from '../components/Sidebar/index.js';
@@ -15,5 +16,7 @@ function DefaultLayout({ children }) {
         </div>
     );
 }
-
+DefaultLayout.propTypes = {
+    children: PropTypes.node.isRequired,
+};
 export default DefaultLayout;
